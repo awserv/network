@@ -43,6 +43,7 @@ resource "aws_route" "rtgroup" {
   count = local.subnet_count
   route_table_id = element(aws_route_table.rtgroup.*.id, count.index)
   destination_cidr_block = "0.0.0.0/0"
+  gateway_id = aws_internet_gateway.gw.id
   nat_gateway_id = element(aws_nat_gateway.ngw.*.id, count.index)
 }  # end resource
 
