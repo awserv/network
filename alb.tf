@@ -12,6 +12,8 @@ resource "aws_lb" "alb" {
  depends_on = [aws_internet_gateway.gw]
 }
 
+
+
 resource "aws_alb_target_group" "targ" {
   name     = "tf-example-lb-tg"
   port     = 80
