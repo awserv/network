@@ -1,3 +1,4 @@
+# aplication load balancer
 resource "aws_lb" "alb" {
  name =  "albin"
  internal = false
