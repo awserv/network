@@ -10,7 +10,6 @@
     to_port    = 443
   }
 
-sefsfds
  egress {
     protocol   = "tcp"
     rule_no    = 200
