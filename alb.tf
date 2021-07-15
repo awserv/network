@@ -14,6 +14,7 @@ resource "aws_lb" "alb" {
 
 
 
+
 resource "aws_alb_target_group" "targ" {
   name     = "tf-example-lb-tg"
   port     = 80
