@@ -23,7 +23,7 @@ resource "aws_alb_target_group" "targ" {
   protocol = "HTTP"
   vpc_id   = aws_vpc.globin.id
 }
-
+-----------------
 resource "aws_lb_listener" "lblist" {
   load_balancer_arn = aws_lb.alb.arn
   port              = "80"
