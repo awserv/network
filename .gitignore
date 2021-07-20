@@ -1,3 +1,4 @@
 .terraform.lock.hcl
 #--------
 #reset 2
+# aws "aws" "ecr"
